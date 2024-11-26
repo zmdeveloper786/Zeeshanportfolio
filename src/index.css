@@ -1,0 +1,131 @@
+/* src/index.css */
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.custom-scrollbar {
+  overflow-y: scroll;
+  position: relative;
+  max-height: 300px;
+  /* Set the height where you want the custom scrollbar */
+}
+
+/* Custom scrollbar track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+/* Custom scrollbar thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b4b4b;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+  /* Padding around thumb */
+}
+
+/* Custom scrollbar thumb on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6d6d6d;
+  /* Color when hovering over the scrollbar thumb */
+}
+
+/* Custom scrollbar width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Additional styling for Firefox */
+.custom-scrollbar {
+  max-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b #1c1c1c;
+}
+
+.custom-scrollbar {
+  overflow-y: scroll;
+  position: relative;
+  max-height: 300px;
+  /* Set the height where you want the custom scrollbar */
+}
+
+/* Custom scrollbar track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  /* Background color of the scrollbar track */
+  border-radius: 10px;
+}
+
+/* Custom scrollbar thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b4b4b;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+  /* Padding around thumb */
+}
+
+/* Custom scrollbar thumb on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6d6d6d;
+  /* Color when hovering over the scrollbar thumb */
+}
+
+/* Custom scrollbar width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Additional styling for Firefox */
+.custom-scrollbar {
+  max-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b #1c1c1c;
+}
+
+/* Colors */
+.cursor-dot,
+.cursor-dot-outline {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.1s ease-out;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot {
+  background-color: #f50000;
+  /* Change this to match your primary color */
+}
+
+.cursor-dot-outline {
+  border: 2px solid #ff0505;
+  /* Outline color */
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Optional: Adding scaling effects for the outline */
+.cursor-dot-outline {
+  transition: all 0.2s ease;
+}
+
+.cursor-dot:active {
+  transform: translate(-50%, -50%) scale(0.75);
+}
+
+.cursor-dot-outline:active {
+  transform: translate(-50%, -50%) scale(1.5);
+}

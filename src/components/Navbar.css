@@ -1,0 +1,43 @@
+
+
+
+
+.nav-label {
+    position: absolute;
+    left: -3em;
+    opacity: 0;
+    color: white;
+    padding: 0.6rem 1rem;
+    margin-right: 20px;
+    border-radius: 1.5rem;
+    white-space: nowrap;
+    transition: left 0.3s ease-in-out, opacity 0.3s ease;
+    width:9em;
+  }
+  @media only screen and (max-width:767px) {
+    .nav-label{
+      width: 1em;
+      
+    }
+  }
+  
+  .group:hover .nav-label {
+    left: -6em; 
+    opacity: 1;  
+  }
+  /* Optional Smooth Transition for Mobile */
+/* Smooth transition for mobile menu */
+nav {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure the navbar is hidden on mobile by default */
+nav.hidden {
+  display: none;
+}
+
+nav.block {
+  display: block;
+}
+
+  

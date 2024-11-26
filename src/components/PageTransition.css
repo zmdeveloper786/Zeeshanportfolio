@@ -1,0 +1,24 @@
+/* src/components/PageTransition.css */
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out, background-color 1s ease-in-out;
+  opacity: 1;
+  z-index: 999; /* Ensure it overlays other content */
+}
+
+.fade-in {
+  opacity: 1;
+  background-color: black; /* Background color for fade-in */
+}
+
+.fade-out {
+  opacity: 0;
+  background-color: yellow; /* Background color for fade-out */
+}
